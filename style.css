@@ -1,0 +1,295 @@
+@font-face {
+    font-family: "AmerigoBtRoman";
+    src: url("/assets/fonts/Amerigo\ BT\ Roman.ttf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "ProximaNovaA-Regular";
+    src: url("/assets/fonts/Proxima\ Nova\ Regular.otf");
+    font-display: swap;
+}
+
+:root{
+    --c-green : #00b289;
+    --c-gray  : #4c525a;
+    --c-gray-100  : #4c4d5f4a;
+    --c-white : #ffffff;
+  --c-white-100:#f3fafe;
+  --c-white-200:#fefffe;
+    --c-yellow: #f8db62;
+
+
+    --font-AmerigoBtRoman: AmerigoBtRoman, "sans-serif";
+    --font-ProximaNovaA-Regular: ProximaNovaA-Regular, "sans-serif"
+}
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--c-white-200);
+    font-family: var(--font-ProximaNovaA-Regular);
+    overflow-x: hidden;
+}
+
+/* navbar */
+header{
+    position:sticky;
+    top: 0;
+    z-index: 2;
+    background-color: var(--c-white);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3em 13em;
+}
+.brand-logo {
+    width: 150px;
+}
+.brand-logo img{
+    display: block;
+    width: 100%;
+}
+.nav-links{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+.nav-links li, .nav-btns{
+    display: flex;
+    gap: 10px;
+}
+.nav-links li a{
+    text-decoration: none;
+    padding: 10px 0;
+    color: var(--c-gray);  
+}
+.nav-links img{
+    width: 10px;
+}
+.default-btn {
+	border: none;
+	background: none;
+	user-select: none;
+	cursor: pointer;
+}
+.login-button{
+    padding: 10px 25px;
+    border: 1px solid var(--c-green);
+    color:var(--c-green);
+    font-weight: 600;
+    border-radius: 5px;
+    letter-spacing: 0.6px;
+}
+.primary-button{
+    padding: 10px 25px;
+    background-color: var(--c-green);
+    color: var(--c-white);
+    font-weight: 600;
+    border-radius: 5px;
+    letter-spacing: 0.6px;
+}
+
+.background-square{
+    position: absolute;
+    left: 15%;
+    bottom: 10rem;
+    border-bottom-left-radius: 100px;
+    background-color: var(--c-white-100);
+    height: 150%;
+    width: 100%;
+    transform: rotate(-20deg);
+    z-index: 0;
+}
+
+/* price section */
+.price-section{
+    position: relative;
+    margin: 150px 0;
+    z-index: 1;
+}
+.price-section >:nth-child(1){
+    margin: 0 auto;
+    width: 73%;
+}
+.price-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0 auto;
+    width: 50%;
+  
+}
+h1{
+    font-family: var(--font-AmerigoBtRoman);
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--c-gray);
+
+}
+.planSwitcher{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.toggle{
+    display: flex;
+    justify-content: flex-start;
+    height: 30px;
+    width: 50px;
+    padding: 2px;
+    border-radius: 50px;
+    background-color: var(--c-green);
+}
+.toggle-ball{
+    width: 25px;
+    background-color: var(--c-white);
+    border-radius: 20px;
+}
+.toggleoptions{
+    font-weight: 600;
+    color:var(--c-gray);
+}
+.yearly-offer{
+    position: absolute;
+    left: 140px;
+    bottom: 18px;
+}
+
+.price-cards{
+    display: flex;
+    gap: 20px;
+    padding: 4rem 0;
+
+}
+.card{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--c-white);
+    outline: 1px solid var(--c-gray-100);
+    flex-basis: 350px;
+    flex-grow: 1;
+    border-radius: 3px;
+    padding: 6% 4%;
+    box-shadow: 0 0 68px 0 rgba(2, 4, 69, .08);
+}
+.most-popular{
+    position: absolute;
+    top: 50px;
+    right: -109px; 
+    padding: 11px 100px;
+    background-color: #01b289;
+    transform: rotate(45deg);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+   
+
+}
+.card-header{
+    font-size:26px;
+    line-height: 1.5;
+    font-weight: 600;
+    color: var(--c-gray);
+}
+.card-description{
+    color: var(--c-gray);
+    padding: 14px 0;
+    font-size:16px;
+}
+.price-box{
+    display: flex;
+    gap:10px;
+    border-bottom: 2px solid var(--c-green);
+    color: var(--c-gray);
+    padding-bottom:10px ;
+}
+.currency-symbal{
+    font-size: 30px;
+}
+.price{
+    font-size: 62px;
+    font-weight: 600;
+    align-self: center;
+}
+.per-month{
+    font-size: 26px;
+    align-self: flex-end;
+}
+.plan-features{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+    gap: 25px;
+}
+.tick-box{
+    display:flex;
+    gap: 10px;
+}
+
+.plan-btns{
+    margin-top: auto
+}
+.plan-button{
+    padding: 25px 0;
+    width: 100%;
+}
+.price-section >:nth-child(2){
+    margin: 0 auto;
+    width: 73%;
+}
+
+.price-section >:nth-child(2) h2{
+    font-family: var(--font-AmerigoBtRoman);
+    font-size: 2.0rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--c-gray);
+    padding: 50px 0;
+}
+.add-ons-card{
+    display: flex;
+    margin-bottom: 20px;
+    padding: 40px 60px ;
+    justify-content: space-between;
+    border-radius: 8px;
+    background-color:var(--c-white);
+    box-shadow: 0 0 60px 0 rgba(2, 4, 69, .05);
+    color: var(--c-gray);
+}
+.add-ons-card div span{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.8;
+}
+.add-ons-price{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.add-ons-price :nth-child(1){
+    font-size: 35px;
+    font-weight: 600;
+}
+.add-ons-text a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--c-green);
+    gap: 8px;
+}
