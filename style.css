@@ -250,7 +250,7 @@ h1{
     width: 73%;
 }
 
-.price-section >:nth-child(2) h2{
+.add-ons-header{
     font-family: var(--font-AmerigoBtRoman);
     font-size: 2.0rem;
     font-weight: 400;
@@ -292,4 +292,70 @@ h1{
     font-weight: 600;
     color: var(--c-green);
     gap: 8px;
+}
+
+.ad-banner{
+    display: flex;
+    justify-content: space-between;  
+    background-color: var(--c-white-100);
+    padding: 50px;
+    margin: 50px auto;
+    width: 80%;
+    border-radius: 8px;
+}
+.ad-banner div{
+    font-family: var(--font-AmerigoBtRoman);
+    font-size: 2.5rem;
+    color: var(--c-gray);
+}
+.ad-banner div span{
+    color: var(--c-green);
+}
+.ad-button{
+    padding: 20px 30px;
+    margin-top:20px;
+    font-weight: 500;
+}
+.QandA{
+    width: 80%;
+    margin: 0 auto;
+}
+.QandA-header{
+    color: var(--c-green);
+    font-size: 32px;
+    text-align: center;
+}
+.dropdown{
+    width: 85%;
+    margin: 40px auto;
+    user-select: none;
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0 15px;
+    color: var(--c-gray);
+}
+.question img{
+    width: 20px;
+    object-fit: cover;
+}
+.answer{
+    color: var(--c-gray);
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px 15px;
+    height: 0;
+    overflow: hidden;
+    transition: 1s;
+}
+ul li{
+    list-style: none;
+}
+
+.list-item.show .answer{
+    height: 100px;
+    transition: 1s;
 }
