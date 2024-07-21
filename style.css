@@ -70,7 +70,7 @@ header{
     padding: 10px 0;
     color: var(--c-gray);  
 }
-.nav-links img{
+.nav-links img , .down-chevron{
     width: 10px;
 }
 .default-btn {
@@ -111,7 +111,7 @@ header{
 /* price section */
 .price-section{
     position: relative;
-    margin: 150px 0;
+    margin-top: 150px;
     z-index: 1;
 }
 .price-section >:nth-child(1){
@@ -141,21 +141,33 @@ h1{
 }
 .toggle{
     display: flex;
-    justify-content: flex-start;
+    padding-left:0;
     height: 30px;
     width: 50px;
     padding: 2px;
     border-radius: 50px;
     background-color: var(--c-green);
+    transition: .3s;
+}
+.switch{
+   padding-left:25px;
+   transition: .3s;
 }
 .toggle-ball{
     width: 25px;
     background-color: var(--c-white);
     border-radius: 20px;
 }
-.toggleoptions{
+.month,.year{
     font-weight: 600;
+    letter-spacing: 1.2px;
     color:var(--c-gray);
+    opacity: 100%;
+    transition: .3s;
+}
+.opacity{
+    opacity: .65;
+    transition: .3s;
 }
 .yearly-offer{
     position: absolute;
@@ -167,8 +179,8 @@ h1{
     display: flex;
     gap: 20px;
     padding: 4rem 0;
-
 }
+
 .card{
     position: relative;
     overflow: hidden;
@@ -205,28 +217,41 @@ h1{
 }
 .card-description{
     color: var(--c-gray);
-    padding: 14px 0;
+    padding: 10px 0;
     font-size:16px;
 }
 .price-box{
     display: flex;
     gap:10px;
-    border-bottom: 2px solid var(--c-green);
     color: var(--c-gray);
     padding-bottom:10px ;
 }
+.greenline{
+    border-bottom: 2px solid var(--c-green);
+}
+.billed-yearly{
+    text-align: right;
+    color: var(--c-gray);
+    padding-bottom: 5px;
+    display: none;
+}
+.show{
+    display: block;
+}
+
 .currency-symbal{
     font-size: 30px;
 }
 .price{
     font-size: 62px;
     font-weight: 600;
-    align-self: center;
+   
 }
 .per-month{
     font-size: 26px;
     align-self: flex-end;
 }
+
 .plan-features{
     display: flex;
     flex-direction: column;
@@ -327,7 +352,7 @@ h1{
 }
 .dropdown{
     width: 85%;
-    margin: 40px auto;
+    margin: 50px auto;
     user-select: none;
 }
 .question{
@@ -337,6 +362,11 @@ h1{
     font-weight: 600;
     margin: 0 15px;
     color: var(--c-gray);
+    transition: .2s;
+}
+.question:hover{
+    color: var(--c-green);
+    transition: .2s;
 }
 .question img{
     width: 20px;
@@ -357,5 +387,52 @@ ul li{
 
 .list-item.show .answer{
     height: 100px;
+    transition: 1s;
+}
+/* footer */
+.footer-columns{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 16% 96px;
+}
+.footer-column{
+   width: 250px;
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+.link{
+    margin-bottom: 1px;
+    color: #4c4d5f;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+    letter-spacing: .11px;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+.footer-title{
+    margin-bottom: 30px;
+    color: var(--c-gray);
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 600;
+    letter-spacing: .12px;
+}
+#pricing{
+    color: var(--c-green);
+}
+
+.dropdown-link-item{
+    padding-left: 10px;
+    height: 0;
+    overflow: hidden;
+    transition: 1s;
+}
+.dropdown-item.show .dropdown-link-item{
+    height: 250px;
     transition: 1s;
 }

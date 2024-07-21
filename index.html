@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bonsai</title>
+    <link rel="icon" href="./assets/icons/title-logo.svg">
     <link rel="stylesheet" href="style.css">
+        
 </head>
 <body>  
     <header>
@@ -32,9 +34,9 @@
                     <h1>Plans & Pricing</h1>
                 </div>
                  <div class="planSwitcher">
-                    <div class="toggleoptions">MONTHLY</div>
+                    <div class="month">MONTHLY</div>
                     <div class="toggle"><div class="toggle-ball"></div></div>
-                    <div class="toggleoptions">YEARLY</div>
+                    <div class="year opacity">YEARLY</div>
                     <img class="yearly-offer" src="./assets/icons/FREE-text.svg" alt="2 months free">
                  </div>
             </div>
@@ -42,10 +44,13 @@
                 <div class="card">
                     <div class="card-header">Starter</div>
                     <div class="card-description">Ideal for freelancers and contractors just starting out.</div>
-                    <div class="price-box">
-                        <span class="currency-symbal">$</span>
-                        <div class="price">24</div>
-                        <span class="per-month">/MONTH</span>
+                    <div class="greenline">
+                        <div class="price-box">
+                            <span class="currency-symbal">$</span>
+                            <div id='starter' class="price">24</div>
+                            <span class="per-month">/MONTH</span>
+                        </div>
+                            <div class="billed-yearly hidden ">Billed yearly</div>
                     </div>
                     <div class="plan-features">
                         <div class="tick-box">
@@ -91,10 +96,13 @@
                     <div class="most-popular"><span>MOST POPULAR</span></div>
                     <div class="card-header">Professional</div>
                     <div class="card-description">Everything a growing independent business needs to thrive.</div>
-                    <div class="price-box">
-                        <span class="currency-symbal">$</span>
-                        <div class="price">39</div>
-                        <span class="per-month">/MONTH</span>
+                    <div class="greenline">
+                        <div class="price-box">
+                            <span class="currency-symbal">$</span>
+                            <div id="professional" class="price">39</div>
+                            <span class="per-month">/MONTH</span>
+                        </div>
+                            <div class="billed-yearly hidden">Billed yearly</div>
                     </div>
                     <div class="plan-features">
                         <div class="tick-box">
@@ -144,10 +152,13 @@
                 <div class="card">
                     <div class="card-header">Business</div>
                     <div class="card-description">The perfect package for small businesses and agencies.</div>
-                    <div class="price-box">
-                        <span class="currency-symbal">$</span>
-                        <div class="price">79</div>
-                        <span class="per-month">/MONTH</span>
+                    <div class="greenline">
+                        <div class="price-box">
+                            <span class="currency-symbal">$</span>
+                            <div id="business" class="price">79</div>
+                            <span class="per-month">/MONTH</span>
+                        </div>
+                            <div class="billed-yearly hidden">Billed yearly</div>
                     </div>
                     <div class="plan-features">
                         <div class="tick-box">
@@ -195,6 +206,7 @@
                         <button class="default-btn primary-button plan-button">START FREE</button>
                     </div>
                 </div>
+                
             </div>
             <div>
                 <h2 class="add-ons-header">Super charge your work with add-ons</h2>
@@ -209,24 +221,25 @@
                     </div>
                 </div>    
                 <div class="add-ons-card"> 
-                    <div class="add-ons-text"><span>Partners</span>
-                        <div>Invite other users for full account access and company management.</div>
-                    </div>
-                    <div class="add-ons-price">
-                        <div>$9</div>
-                        <div>/MONTH</div>
-                    </div>
-                </div>
-                <div class="add-ons-card"> 
                     <div class="add-ons-text"><span>Bonsai Tax</span>
                         <div>Track expenses, identify write-offs, and estimate quarterly taxes easily.</div>
                         <a href="#">LEARN MORE <img src="/assets/icons/learn-arrow.svg" alt="learn-arrow"></a>
                     </div>
                     <div class="add-ons-price">
-                        <div>$10</div>
-                        <div>/MONTH</div>
+                        <div id="bonsaiTax">$10</div>
+                        <div class="monthly-yearly">/MONTH</div>
                     </div>
                 </div>  
+                <div class="add-ons-card"> 
+                    <div class="add-ons-text"><span>Partners</span>
+                        <div>Invite other users for full account access and company management.</div>
+                    </div>
+                    <div class="add-ons-price">
+                        <div id="partner">$9</div>
+                        <div class="monthly-yearly">/MONTH</div>
+                    </div>
+                </div>
+                
             </div>    
             <div class="ad-banner">
                 <div>It’s <span>your</span> business.<br/>
@@ -258,6 +271,170 @@
             </div>
         </section>
     </main>
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-column">
+                <div class="footer-title">PRODUCT</div>
+                <div class="footer-links">
+                    <a class="link" href="#">Proposals</a>
+                    <a class="link" href="#">Contracts</a>
+                    <a class="link" href="#">Invoicing</a>
+                    <a class="link" href="#">Client CRM</a>
+                    <a class="link" href="#">Time Tracking</a>
+                    <a class="link" href="#">Task Tracking</a>
+                    <a class="link" href="#">Forms</a>
+                    <a class="link" href="#">Accounting</a>
+                    <a class="link" href="#">Bonsai Tax</a>
+                    <a class="link" href="#">Bonsai Cash</a>
+                </div>
+                <div class="footer-links">
+                    <a id="pricing" class="link" href="#">Pricing</a>
+                    <a class="link" href="#">Bonsai Reviews</a>
+                   
+                </div>
+            </div>
+            <div class="footer-column">
+                <div class="footer-title">FREE RESOURCES</div>
+                <div class="footer-links">
+                    <a class="link" href="#">Freelance Resources</a>
+                    <a class="link" href="#">Freelance Blog by Bonsai</a>
+                    <a class="link" href="#">How to Write a Contract</a>
+                    <a class="link" href="#">Online Signature Maker</a>
+                </div>
+                <div class="footer-links">
+                    <a class="link" href="#">Self-Employed Taxes Hub</a>
+                    <a class="link" href="#">Self-Employed Tax</a>
+                    <a class="link" href="#">Calculator</a>
+                    <a class="link" href="#">Self-Employed Tax</a>
+                    <a class="link" href="#">Deductions</a>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-title">Templates</div>
+                    <ul class="dropdown-links">
+                        <li class="dropdown-item" href="#">
+                            <div class="dropdown-title link">Invoice Templates <img class="down-chevron" src="/assets/icons/down-chevron.svg" alt="down-chevron"></div>
+                            <div class="dropdown-link-item">
+                                <a class="link" href="#">Invoice Generator</a>
+                                <a class="link" href="#">Blank Invoice Template</a>
+                                <a class="link" href="#">Consultant Invoice</a>
+                                <a class="link" href="#">Template</a>
+                                <a class="link" href="#">Editable Invoice Template</a>
+                                <a class="link" href="#">Graphic Design Invoice</a>
+                                <a class="link" href="#">Web Design Invoice</a>
+                                <a class="link" href="#">Contractor</a>
+                                <a class="link" href="#">Invoice Template</a>
+                                <a class="link" href="#">Photography Invoice</a>
+                                <a class="link" href="#">Template</a>
+                                <a class="link" href="#">Self Employed Invoice</a>
+                                <a class="link" href="#">Template</a>
+                            </div>
+                        </li>
+                        <li class="dropdown-item" href="#">
+                            <div class="dropdown-title link">Proposal Templates <img class="down-chevron" src="/assets/icons/down-chevron.svg" alt="down-chevron"></div>
+                            <div class="dropdown-link-item">
+                                <a class="link" href="#">Website Proposal Template</a>
+                                <a class="link" href="#">Digital Marketing Proposal</a>
+                                <a class="link" href="#">Template</a>
+                                <a class="link" href="#">Social Media Marketing</a>
+                                <a class="link" href="#">Proposal</a>
+                                <a class="link" href="#">Graphic Design Invoice</a>
+                                <a class="link" href="#">Freelance Proposal</a>
+                                <a class="link" href="#">Template</a>
+                                <a class="link" href="#">SEO Proposal Template</a>
+                            </div>
+                        </li>
+                        <li class="dropdown-item" href="#">
+                            <div class="dropdown-title link">Contract Templates <img class="down-chevron" src="/assets/icons/down-chevron.svg" alt="down-chevron"></div>
+                            <div class="dropdown-link-item">
+                                <a class="link" href="#">Template</a>
+                                <a class="link" href="#">Social Media Marketing</a>
+                                <a class="link" href="#">Proposal</a>
+                                <a class="link" href="#">Graphic Design Invoice</a>
+                                <a class="link" href="#">Freelance Proposal</a>
+                                <a class="link" href="#">Template</a>
+                                <a class="link" href="#">SEO Proposal Template</a>
+                            </div>
+                        </li>
+                        <li class="dropdown-item" href="#">
+                            <div class="dropdown-title link">Agreement Templates <img class="down-chevron" src="/assets/icons/down-chevron.svg" alt="down-chevron"></div>
+                            <div class="dropdown-link-item">
+                                <a class="link" href="#">Template</a>
+                                <a class="link" href="#">Social Media Marketing</a>
+                                <a class="link" href="#">Template</a>
+                                <a class="link" href="#">SEO Proposal Template</a>
+                            </div>
+                        </li>
+                        <li class="dropdown-item" href="#">
+                            <div class="dropdown-title link">Scope of Work Templates <img class="down-chevron" src="/assets/icons/down-chevron.svg" alt="down-chevron"></div>
+                            <div class="dropdown-link-item">
+                                <a class="link" href="#">Template</a>
+                                <a class="link" href="#">Social Media Marketing</a>
+                                <a class="link" href="#">Proposal</a>
+                                <a class="link" href="#">Graphic Design Invoice</a>
+                                <a class="link" href="#">Freelance Proposal</a>
+                            </div>
+                        </li>
+                        <li class="dropdown-item" href="#">
+                            <div class="dropdown-title link">Quote Templates <img class="down-chevron" src="/assets/icons/down-chevron.svg" alt="down-chevron"></div>
+                            <div class="dropdown-link-item">
+                                <a class="link" href="#">Social Media Marketing</a>
+                                <a class="link" href="#">Proposal</a>
+                                <a class="link" href="#">Consultant Invoice</a>
+                                <a class="link" href="#">Template</a>
+                                <a class="link" href="#">Editable Invoice Template</a>
+                                <a class="link" href="#">Graphic Design Invoice</a>
+                                <a class="link" href="#">Web Design Invoice</a>
+                                <a class="link" href="#">Contractor</a>
+                                <a class="link" href="#">Invoice Template</a>
+                                <a class="link" href="#">Graphic Design Invoice</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <a class="link" href="#">Credit Note Templates</a>
+                    <a class="link" href="#">Estimate Templates</a>
+                    <a class="link" href="#">Form Templates</a>
+                </div>
+
+            </div>
+            <div class="footer-column">
+                <div class="footer-title">BONSAI</div>
+                <div class="footer-links">
+                    <a class="link" href="#">About</a>
+                    <a class="link" href="#">Careers</a>
+                    <a class="link" href="#">Support</a>
+                    <a class="link" href="#">LinkedIn</a>
+                    <a class="link" href="#">Twitter</a>
+                    <a class="link" href="#">Privacy policy</a>
+                    <a class="link" href="#">Legal</a>
+                </div>
+                <div class="footer-links">
+                    <a class="link" href="#">Affiliates</a>
+                    <a class="link" href="#">Write for Us</a>
+                </div>
+                <ul class="dropdown-links">
+                    <li class="dropdown-item" href="#">
+                        <div class="dropdown-title link">Comparisons <img class="down-chevron" src="/assets/icons/down-chevron.svg" alt="down-chevron"></div>
+                        <div class="dropdown-link-item">
+                            <a class="link" href="#">Invoice Generator</a>
+                            <a class="link" href="#">Blank Invoice Template</a>
+                            <a class="link" href="#">Consultant Invoice</a>
+                            <a class="link" href="#">Template</a>
+                            <a class="link" href="#">Editable Invoice Template</a>
+                            <a class="link" href="#">Graphic Design Invoice</a>
+                            <a class="link" href="#">Web Design Invoice</a>
+                            <a class="link" href="#">Contractor</a>
+                            <a class="link" href="#">Invoice Template</a>
+                            <a class="link" href="#">Photography Invoice</a>
+                            <a class="link" href="#">Template</a>
+                            <a class="link" href="#">Self Employed Invoice</a>
+                            <a class="link" href="#">Template</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     <script src="/script.js"></script>
 </body>
 </html>
