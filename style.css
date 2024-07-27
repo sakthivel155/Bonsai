@@ -57,6 +57,7 @@ header{
     width: 100%;
 }
 .nav-links{
+    position: relative;
     display: flex;
     gap: 50px;
     list-style: none;
@@ -73,6 +74,124 @@ header{
 .nav-links img , .down-chevron{
     width: 10px;
 }
+.nav-links :nth-child(1):hover .dropdown-navbar-list{
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 0.3s, opacity 0.3s;
+} 
+/* hover list */
+
+.dropdown-navbar-list, .nested-navbar-list{
+    position: absolute;
+    top: 50px;
+    left: -80px;
+    width: 330px;
+    background-color: var(--c-white);
+    box-shadow: 0 1px 60px 0 rgba(2, 4, 69, .1);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.nav-list{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 40px 40px 0 40px;
+    border-bottom:1px solid rgba(0, 0, 0, .1);
+    transition: .3s;
+}
+.nav-list:hover{
+    border-bottom:1px solid rgba(0, 0, 0, .0);
+    transition: .3s;
+}
+
+.list-title{
+    margin-bottom: 10px;
+    font-family: var(--font-AmerigoBtRoman);
+    color: var(--c-gray);
+    font-size: 22px;
+    line-height: 26px;
+}
+.list-caption{
+    color: var(--c-gray);
+    line-height: 22px;
+    padding-bottom:30px ;
+}
+.right-chevron{
+    position: absolute;
+    top: 56px;
+    left: 265px;
+    transform: rotate(270deg);
+    opacity: 0%;
+    transition: .3s;
+}
+.dropdown-navbar-list :nth-child(1):hover .right-chevron{
+    opacity: 100%;   
+    transition: .3s;
+}
+.nested-navbar-list{
+    position: absolute;
+    top: -40px;
+    left: 290px;
+    padding: 30px;
+    width: max-content;
+    height: 527px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s;
+}
+.bonsai-hover:hover .nested-navbar-list{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.item-image img{
+    width: 18px;
+}
+.item-title{
+    margin-bottom: 10px;
+    color: var(--c-gray);
+    font-size: 15px;
+    line-height: 18px;
+}
+.item-caption{
+    color: #6d6d6d;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 400;
+}
+.nested-list{
+    display: grid;
+    grid-template-columns: 260px 260px;
+    gap: 15px;
+    height: 100%;
+}
+.nested-item{
+    display: flex;
+    gap: 12px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.nested-item:hover{
+    background-color: rgb(0, 0, 0,.04);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .default-btn {
 	border: none;
 	background: none;
