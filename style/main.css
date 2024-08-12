@@ -1,41 +1,3 @@
-@font-face {
-    font-family: "AmerigoBtRoman";
-    src: url("/assets/fonts/Amerigo\ BT\ Roman.ttf");
-    font-display: swap;
-}
-@font-face {
-    font-family: "ProximaNovaA-Regular";
-    src: url("/assets/fonts/Proxima\ Nova\ Regular.otf");
-    font-display: swap;
-}
-
-:root{
-    --c-green : #00b289;
-    --c-gray  : #4c525a;
-    --c-gray-100  : #4c4d5f4a;
-    --c-white : #ffffff;
-  --c-white-100:#f3fafe;
-  --c-white-200:#fefffe;
-    --c-yellow: #f8db62;
-
-
-    --font-AmerigoBtRoman: AmerigoBtRoman, "sans-serif";
-    --font-ProximaNovaA-Regular: ProximaNovaA-Regular, "sans-serif"
-}
-
-
-
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-body{
-    background-color: var(--c-white-200);
-    font-family: var(--font-ProximaNovaA-Regular);
-    overflow-x: hidden;
-}
-
 /* navbar */
 header{
     position:sticky;
@@ -46,7 +8,7 @@ header{
 .navbar{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
     padding: 1.3em 13em;
 }
 .brand-logo {
@@ -269,9 +231,6 @@ header{
     line-height: 18px;
 }
 
-
-
-
 .show-more{
     margin-top: 24px;
     text-align: center;
@@ -280,35 +239,7 @@ header{
     font-weight: 600;
 }
 
-
-
-
-
-
-
-
-.default-btn {
-	border: none;
-	background: none;
-	user-select: none;
-	cursor: pointer;
-}
-.login-button{
-    padding: 10px 25px;
-    border: 1px solid var(--c-green);
-    color:var(--c-green);
-    font-weight: 600;
-    border-radius: 5px;
-    letter-spacing: 0.6px;
-}
-.primary-button{
-    padding: 10px 25px;
-    background-color: var(--c-green);
-    color: var(--c-white);
-    font-weight: 600;
-    border-radius: 5px;
-    letter-spacing: 0.6px;
-}
+/* background square design */
 
 .background-square{
     position: absolute;
@@ -324,14 +255,12 @@ header{
 
 /* price section */
 .price-section{
-    position: relative;
-    margin-top: 150px;
+    position: relative;    
     z-index: 1;
-}
-.price-section >:nth-child(1){
-    margin: 0 auto;
+    margin: 150px auto;
     width: 73%;
 }
+
 .price-header{
     display: flex;
     justify-content: space-between;
@@ -340,37 +269,12 @@ header{
     width: 50%;
   
 }
-h1{
-    font-family: var(--font-AmerigoBtRoman);
-    font-size: 2.5rem;
-    font-weight: 400;
-    color: var(--c-gray);
-
-}
+/* Toffle button */
 .planSwitcher{
     position: relative;
     display: flex;
     align-items: center;
     gap: 30px;
-}
-.toggle{
-    display: flex;
-    padding-left:0;
-    height: 30px;
-    width: 50px;
-    padding: 2px;
-    border-radius: 50px;
-    background-color: var(--c-green);
-    transition: .3s;
-}
-.switch{
-   padding-left:25px;
-   transition: .3s;
-}
-.toggle-ball{
-    width: 25px;
-    background-color: var(--c-white);
-    border-radius: 20px;
 }
 .month,.year{
     font-weight: 600;
@@ -383,12 +287,33 @@ h1{
     opacity: .65;
     transition: .3s;
 }
+.toggle{
+    display: flex;
+    padding-left:0;
+    height: 30px;
+    width: 50px;
+    padding: 2px;
+    border-radius: 50px;
+    background-color: var(--c-green);
+    transition: .3s;
+}
+.toggle-ball{
+    width: 25px;
+    background-color: var(--c-white);
+    border-radius: 20px;
+}
+.switch{
+   padding-left:25px;
+   transition: .3s;
+}
+
 .yearly-offer{
     position: absolute;
     left: 140px;
     bottom: 18px;
 }
 
+/* flex price card */
 .price-cards{
     display: flex;
     gap: 20px;
@@ -440,18 +365,6 @@ h1{
     color: var(--c-gray);
     padding-bottom:10px ;
 }
-.greenline{
-    border-bottom: 2px solid var(--c-green);
-}
-.billed-yearly{
-    text-align: right;
-    color: var(--c-gray);
-    padding-bottom: 5px;
-    display: none;
-}
-.show{
-    display: block;
-}
 
 .currency-symbal{
     font-size: 30px;
@@ -464,6 +377,20 @@ h1{
 .per-month{
     font-size: 26px;
     align-self: flex-end;
+}
+
+.billed-yearly{
+    text-align: right;
+    color: var(--c-gray);
+    padding-bottom: 5px;
+    display: none;
+}
+.show{
+    display: block;
+}
+
+.greenline{
+    border-bottom: 2px solid var(--c-green);
 }
 
 .plan-features{
@@ -484,10 +411,8 @@ h1{
     padding: 25px 0;
     width: 100%;
 }
-.price-section >:nth-child(2){
-    margin: 0 auto;
-    width: 73%;
-}
+
+/* add-on section */
 
 .add-ons-header{
     font-family: var(--font-AmerigoBtRoman);
@@ -555,6 +480,7 @@ h1{
     margin-top:20px;
     font-weight: 500;
 }
+/* FAQ section */
 .QandA{
     width: 80%;
     margin: 0 auto;

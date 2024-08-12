@@ -1,0 +1,23 @@
+/* navbar-buttons */
+.default-btn {
+	border: none;
+	background: none;
+	user-select: none;
+	cursor: pointer;
+}
+.login-button{
+    padding: 10px 25px;
+    border: 1px solid var(--c-green);
+    color:var(--c-green);
+    font-weight: 600;
+    border-radius: 5px;
+    letter-spacing: 0.6px;
+}
+.primary-button{
+    padding: 10px 25px;
+    background-color: var(--c-green);
+    color: var(--c-white);
+    font-weight: 600;
+    border-radius: 5px;
+    letter-spacing: 0.6px;
+}

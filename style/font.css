@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "AmerigoBtRoman";
+    src: url("/assets/fonts/Amerigo\ BT\ Roman.ttf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "ProximaNovaA-Regular";
+    src: url("/assets/fonts/Proxima\ Nova\ Regular.otf");
+    font-display: swap;
+}
+:root{
+     --font-AmerigoBtRoman: AmerigoBtRoman, "sans-serif";
+    --font-ProximaNovaA-Regular: ProximaNovaA-Regular, "sans-serif"
+}
