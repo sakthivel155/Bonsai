@@ -194,12 +194,7 @@
     margin: 5px 0;
    }
    .background-square{
-    top: -130px;
-    left: 0%;
-    height: 70%;
-    width: 70%;
-    transform: rotate(-60deg); 
-    border-bottom-left-radius: 40px;
+    display: none;
 }
 .navbar{
     padding: 1.3em 1.5em;
