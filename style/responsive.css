@@ -12,6 +12,13 @@
        
         width: 90%;
     }
+    .background-square{
+        top: -330px;
+        left: 10%;
+        height: 130%;
+        width: 70%;
+        transform: rotate(-40deg); 
+    }
   
 }
 @media screen and (max-width: 1200px) {
@@ -21,17 +28,48 @@
     .price-header{
         width: 60%;
     }
+    .background-square{
+        top: -350px;
+        left: 10%;
+        height: 130%;
+        width: 70%;
+        transform: rotate(-40deg); 
+    }
 }
 
-@media screen and (max-width:1000px) {
-    .nav-links,.nav-btns{
-        display: none;
+@media screen and (max-width:1100px) {
+
+    .navbar{
+        position: relative;
+        flex-direction: column;
+        height: 70px;
+        justify-content: space-between;
+        overflow: hidden;
     }
+
+    .navbar.active{
+        height: 100vh;
+    }
+
+    .nav-links{
+       
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-btns{
+        flex-direction: column;
+    }
+
+    .brand-logo{
+        padding-bottom: 12px;
+    }
+  
     .price-section{
         margin: 60px auto; 
     }
     .price-header{
-      width: 90%;
+      width: 100%;
     }
     .price-cards{
         flex-direction: column;
@@ -43,5 +81,131 @@
     .footer-columns{
         padding: 100px 5% 96px;
     }
+    .background-square{
+        top: -250px;
+        left: 15%;
+        height: 100%;
+        width: 70%;
+        transform: rotate(-40deg); 
+    }
+    .nav-menu{
+        display: block;
+    }
+    .dropdown-product-list, .dropdown-templete>.dropdown-templetes-list{
+        top:-150px;
+        left:-50px; 
+        width: 100vw;
+    }
+    .templete-nested-navbar,.templete-right-chevron{
+        display: none;
+    }
+    .nav-links li{
+        border-bottom:1px solid rgb(186, 181, 181);
+    }
+    .nav-links .template-list{
+        border:none;
+    }
+
+}
+@media screen and (max-width: 950px){
+    .background-square{
+        top: -200px;
+        left: 10%;
+        height: 80%;
+        width: 60%;
+        transform: rotate(-43deg); 
+        border-bottom-left-radius: 5px;
+    }
+    .ad-banner{
+        padding: 30px 20px;
+        width: 100%;
+    }
+    .ad-banner div{
+        font-size: 1.5rem;
+    }
+    .ad-button{
+        margin-top:0;
+    }
+    .QandA{
+        width: 100%;
+    }
+}
+@media (max-width: 660px){
+    .background-square{
+        top: -200px;
+        left: 0%;
+        height: 70%;
+        width: 70%;
+        transform: rotate(-60deg); 
+        border-bottom-left-radius: 40px;
+    }
+    .question{
+        font-size: 14px;
+    }
+    .dropdown{
+        width: 100%;  
+    }
+    .add-ons-header{
+        font-size: 1.0rem;
+        padding: 25px 0;
+    }
+    h1{
+        font-size: 1.8rem;
+    }
+    .price-header{
+       flex-direction: column;
+       width: 90%;
+       gap: 10px;
+    }
+    .planSwitcher{
+        font-size:.8rem;
+        align-self: end;
+    }
+    .yearly-offer{
+        left: 120px;
+    }
+    .price-cards{
+        padding: 2rem 0;
+    }
+    .add-ons-card{
+        padding: 30px 20px ;
+    }
+}
+@media (max-width: 480px){
+    .add-ons-header{
+        padding: 40px 0;
+    }
+    .dropdown{
+        margin: 25px auto;  
+    }
+    .ad-banner div{
+        font-size: 1rem;
+    }
+    .footer-columns{
+    flex-direction: column;
+    padding: 10px 16% 90px;
+   }
+   .QandA-header{
+    font-size: 24px;
+   }
+   .ad-button{
+    padding: 10px 20px;
+    font-size: 10px;
+    margin: 5px 0;
+   }
+   .background-square{
+    top: -130px;
+    left: 0%;
+    height: 70%;
+    width: 70%;
+    transform: rotate(-60deg); 
+    border-bottom-left-radius: 40px;
+}
+.navbar{
+    padding: 1.3em 1.5em;
+}
+.brand-logo {
+    width: 120px;
+}
 }
 

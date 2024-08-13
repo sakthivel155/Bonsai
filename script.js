@@ -174,3 +174,21 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// mobile navbar slide window
+// const mobileNavbar = document.querySelector('.mobile-navbar');
+
+// document.addEventListener('DOMContentLoaded',()=>{
+    //     menuIcon.addEventListener('click',()=>{
+        //         mobileNavbar.style.display = mobileNavbar.style.display === 'none' ? 'block' : 'none';
+        //     })
+        // })
+        
+        
+        const menuIcon = document.querySelector('.menu-btn');
+        const navBar = document.querySelector('.navbar');
+
+        menuIcon.addEventListener('click', function(){
+            navBar.classList.toggle('active')
+        })
+
+
