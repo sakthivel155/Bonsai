@@ -1,19 +1,21 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
 }
-body{
-    height: 100%;
-    width: 100%;
-    background-color: var(--c-white-200);
-    font-family: var(--font-ProximaNovaA-Regular);
-    overflow-x: hidden;
+
+body {
+	height: 100%;
+	width: 100%;
+	background-color: var(--c-white-200);
+	font-family: var(--font-ProximaNovaA-Regular);
+	overflow-x: hidden;
 }
-h1{
-    font-family: var(--font-AmerigoBtRoman);
-    font-size: 2.5rem;
-    font-weight: 400;
-    color: var(--c-gray);
+
+h1 {
+	font-family: var(--font-AmerigoBtRoman);
+	font-size: 2.5rem;
+	font-weight: 400;
+	color: var(--c-gray);
 
 }
